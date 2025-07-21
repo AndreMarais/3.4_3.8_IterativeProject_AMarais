@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Porirua Rowing Club</title>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="Rowing, Porirua, Club, Sport, Outdoor Activaties"/>
+		<meta name="Author" content="André Marais"/>
+		<meta name="Description" content="Porirua Rowing Club"/>
+		<meta name="viewport" content="with=device-with, initial-scale=1"/>
+		
+		<!-- import the webpage's stylesheet -->
+		<link rel="stylesheet" href="css/Style.css">
+	</head>
+	<!-- main webpage content starts here -->
+	<body>
+		<div class="grid-container">
+			<div class="header">
+				<center><img src="images/Transparent Logo.png" alt="Header"></center>
+			</div>
+			
+			<div class="nav">
+				<a href="Index.html">▶ Page 1 ◀</a>
+				<a href="Page 2.html">▶ Page 2 ◀</a>
+				<a href="Page 3.html">▶ Page 3 ◀</a>
+			</div>
+			
+			<div class="scroll-area">
+				<div class="images">
+					<input type="radio" name="slide" id="img1" checked> <!-- Radio is the style of the input buttons. Checked activates the CSS. -->
+					<input type="radio" name="slide" id="img2"> <!-- ID Controls each separate image through the CSS using a # -->
+					<input type="radio" name="slide" id="img3">
+					<input type="radio" name="slide" id="img4">
+		
+					<img src="images/White cube.jpg" class="m1" alt="Picture 1"> <!-- Class Controls each separate image through the CSS using a . -->
+					<img src="images/White cube.jpg" class="m2" alt="Picture 2">
+					<img src="images/White cube.jpg" class="m3" alt="Picture 3">
+					<img src="images/White cube.jpg" class="m4" alt="Picture 4">
+				</div>
+				<!-- Setup Class to hold and control Radio input Buttons to move each image. -->
+				<div class="dots">
+					<name for="img1"></name>
+					<name for="img2"></name>
+					<name for="img3"></name>
+					<name for="img4"></name>
+				</div>
+			</div>	
+			
+			<div class="footer">
+				<a>▶ Copyright. ◀</a>
+			</div>
+			
+			<div>
+				<!-- Back to top button here -->
+				<button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+				<script type="text/javascript" src="js/backtotop.js"></script>
+			</div>
+		</div>
+	</body>
+</html>
