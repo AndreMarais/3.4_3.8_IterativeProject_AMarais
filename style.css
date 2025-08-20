@@ -1,0 +1,242 @@
+html{
+	background-color: red;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1550px auto;
+	grid-template-rows: 335px 50px Auto 100px;
+	height: 200px;
+	background-color: black;
+}
+
+
+.header{
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-image: url("../images/College Drone Shot.jpg");
+	background-size: cover;
+	background-color: blue;
+	border: Solid White 5px;
+}
+
+.nav{
+	padding-left:10px;
+	padding-top:7px;
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: blue;
+	border-left: Solid White 5px;
+	border-right: Solid White 5px;
+}
+
+a{
+	font-family: "Anton", sans-serif;
+	text-decoration: none;
+	font-size: 25px;
+	Background-color: White;
+	border-radius: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+	a:link {color: Purple;} /* unvisited link */
+	a:visited {color: Black;} /* visited link */
+	a:hover {color: white; background-color: Black;} /* mouse over link */
+
+.scroll-area{
+	Grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	color: Black;
+	background-color: blue;
+	Padding-left: 25px;
+	padding-top: 25px;
+	border: Solid White 5px;
+}
+
+.footer{
+	Padding-left: 25px;
+	padding-bottom: 25px;
+	Grid-row-start: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: blue;
+	border-left: Solid White 5px;
+	border-bottom: Solid White 5px;
+	border-right: Solid White 5px;
+}
+
+.images{
+	max-height: 400px;
+	width: 2200px;  /* adjustment to show each image on carousel. */
+    overflow: hidden;  /* overflow hides next image. */
+}
+
+.images img{
+	display: cover;
+    transition: all 0.20s ease;  /* timing transition to show next image. */
+	border-radius: 13px;
+	height: 1000px;
+}
+
+.images input{
+    display: none;  /* display none hides the 3 images behind 1st image. */
+}
+
+.dots{
+    display: flex;
+    margin: 5px;
+}
+
+.dots name{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid Black 5px;
+    cursor: pointer;
+    transition: all 0.30s ease;  /* timing transition to show next image. */
+    margin: 10px;
+}
+
+.dots name:hover {background: black;}
+
+#img1:checked ~ .m1{  /* ~ (tilde) is a selector used to select each "m" element following checked. */
+    margin-left: 0%;
+}
+#img2:checked ~ .m2{
+    margin-left: -25.16%;
+}
+#img3:checked ~ .m3{
+    margin-left: -50.35%;  /* margin-left value moves each image to the Left. */
+}
+#img4:checked ~ .m4{
+    margin-left: -75.52%;
+}
+
+/* CSS for styling Back to top button. */
+
+#myBtn{
+	display: ;
+	position: fixed;
+	bottom: 2px; 
+	right: 10px;
+	z-index: 99; /* z-index brings the element (button) to the front. */
+	border: none;
+	outline: none;
+	Background-color: red;
+	color: Black;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 15px;
+	Font-size: 40px;
+}
+
+#myBtn:hover{
+	cursor: pointer;
+	background-color: white; /* Calling up my Variable Color to be used. */
+}
+
+p{
+	font-size: 30px;
+	font-family: "Anton", sans-serif;
+	color: white;
+}
+
+h3{
+	font-size: 40px;
+	Background-color: white;
+	border-radius: 5px;
+	font-family: "Permanent Marker", cursive;
+}
+
+h2{
+	Background-color: white;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+h1{
+	font-size: 60px;
+	Background-color: black;
+	border-radius: 5px;
+	font-family: "Permanent Marker", cursive;
+}
+
+/*Contact Page*/
+
+input[type=text], select, textarea{
+
+	width: 100%;
+	padding: 15px;
+	border: 1px solid grey;
+	border-radius: 4px;
+	resize: vertical;
+
+}
+
+label {
+
+	padding: 12px;
+	display: inline-block;
+
+}
+
+input[type=submit]{
+
+	background-color: red;
+	color: White;
+	padding:12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	margin-right: 35px;
+
+}
+
+input[type=submit]:hover{
+
+	background-color: blue;
+
+}
+
+.contact_container{
+
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.column{
+
+	float: left;
+	width: 150px;
+	margin-top: 6px;
+
+}
+
+.column2{
+
+	float: left;
+	width: 500px;
+	margin-top: 6px;
+
+}
+
+/* Clear floats after the columns */
+
+.row:after{
+
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+form{
+
+}
