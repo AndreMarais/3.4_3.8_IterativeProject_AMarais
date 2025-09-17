@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Porirua Rowing Club</title>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="Rowing, Porirua, Club, Sport, Outdoor Activaties"/>
+		<meta name="Author" content="André Marais"/>
+		<meta name="Description" content="Porirua Rowing Club"/>
+		<meta name="viewport" content="with=device-with, initial-scale=1"/>
+		
+		<!-- import the webpage's stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<!-- main webpage content starts here -->
+	<body>
+		<div class="grid-container">
+			<div class="header">
+				<div class="logo">
+					<img src="images/PRC LOGO.png" alt="logo">
+				</div>
+			</div>
+			
+			<div class="nav">
+				<div class="background">
+					<a href="Index.html">▶ Home ◀</a>
+					<a href="Page 2.html">▶ Photos ◀</a>
+					<a href="Page 3.html">▶ Contact ◀</a>
+				</div>
+			</div>
+			
+			<div class="scroll-area">
+				<div class="background">
+				
+					<div id = "main">
+				
+						<?php require("nav.php")
+						?>
+			
+						<?php
+						require_once("13dit_phpform_mysqli.php");
+						?>
+			
+						<!-- Form -->
+			
+						<div class= "contact_container">
+							<form action="connect.php" method="post">
+					
+								<div class="row">
+					
+									<div class="column">
+					
+										<label for="name">Full Name</label>
+					
+									</div>
+					
+						
+									<div class="column2">
+						
+										<input type="text" id="name" name="name" placeholder="Your full name">
+						
+									</div>
+							
+								</div>
+					
+								<!-- Email -->
+					
+								<div class="row">
+						
+									<div class="column">
+							
+										<label for="email">Email Address</label>
+							
+									</div>
+							
+									<div class="column2">
+							
+										<input type="text" id="email" name="email" placeholder="Your email address">
+							
+									</div>
+							
+								</div>
+						
+								<!-- Contact Number Field -->
+						
+								<div class="row">
+						
+									<div class="column">
+							
+										<label for="contactnumber">Contact Number</label>
+							
+									</div>
+							
+									<div class="column2">
+							
+										<input type="text" id="phone" name="phone" placeholder="A contact number">
+							
+									</div>
+								</div>
+					
+								<!-- Subject -->
+					
+								<div class="row">
+						
+									<div class="column">
+							
+										<label for="subject">Subject</label>
+							
+									</div>
+						
+									<div class="column2">
+							
+										<textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+						
+									</div>
+								</div>
+					
+								<!-- Submit -->
+					
+								<div class="row">
+						
+									<input type="submit" value="Submit">
+							
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<div class="background">
+					<p>© Porirua Rowing Club 2025. All rights reserved.</p>
+				</div>	
+			</div>
+			
+			<div>
+				<!-- Back to top button here -->
+				<button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+				<script type="text/javascript" src="js/backtotop.js"></script>
+			</div>
+		</div>
+	</body>
+</html>
